@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@700&display=swap');
+
+* {
+  margin:0;   /* 마진 리셋 */
+  padding:0;   /* 패딩 리셋 */
+  box-sizing: border-box;   /* 박스 영역은 테두리까지 */ 
+}
+a {
+  text-decoration:none;  /* 텍스트 링크 밑줄 없애기 */ 
+}
+#container {
+  margin:0 auto;  /* 화면 중앙에 배치 */
+  width:1200px;    /* 너비 */
+}
+
+/*********************************/
+/* 헤더 영역 - 로고와 내비게이션 */
+/*********************************/
+
+header{
+  width:100%;    /*  너비 */
+  height:100px;   /* 높이 */ 
+  background-color:#07c;
+}
+
+/* 로고 */
+#logo{ 
+  float:left;   /* 왼쪽으로 플로팅 */ 
+  width:250px;   /*  너비 */ 
+  height:100px;   /* 높이 */
+  line-height:100px;  /* 세로로 중간에 맞춤 - 줄간격을 높이 값과 같게 */
+  padding-left:20px;  /* 왼쪽에 여백 */
+}
+#logo h1 {
+  font-family:'Merienda', cursive;
+  font-weight:700;
+  font-size:40px;   /* 글자 크기 */
+  color:#fff;   /* 글자 색*/
+  text-shadow:0 -1px 0 #222;  /* 그림자 색 */
+}
+
+/* 내비게이션 */
+nav{  
+  float:right;   /* 오른쪽으로 플로팅 */
+  width:900px;   /*   너비 */  
+  height:100px;   /* 메뉴 영역 높이 */ 
+  background-color:green;  
+}
+
+/********************************/
+/*   이미지 슬라이드 쇼 영역    */
+/********************************/
+
+#slideShow {   
+  clear:both;   /* 플로팅 해제 */
+  width:100%;    /* 너비 */ 
+  height:300px;   /* 높이 */ 
+  background-color:orange; 
+  overflow:hidden;   /* 영역 넘치면 감춤 */ 
+}
+
+/**************************************/
+/*   콘텐츠 영역  - 탭 메뉴와 퀵 링크 */
+/**************************************/
+
+#contents{  
+  width:100%;   /* 너비 */
+  height:300px;  /* 높이 */   
+}
+
+/* 탭 메뉴 */
+#tabMenu{  
+  float:left;  /* 왼쪽으로 플로팅 */ 
+  width:600px;   /* 너비 */ 
+  height:100%;   /* 높이 */
+  background-color:violet;
+}
+
+/* 퀵 링크 */ 
+#links{  
+  float:right;   /* 오른쪽으로 플로팅 */
+  width:600px;   /* 너비 */
+  height:100%;   /* 높이 */
+  background-color:skyblue;
+}
+
+/******************/
+/*   푸터 영역    */
+/******************/
+
+footer{   
+  width:100%;   /* 너비 */
+  height:100px;  /* 높이 */
+  background-color:gray;
+}

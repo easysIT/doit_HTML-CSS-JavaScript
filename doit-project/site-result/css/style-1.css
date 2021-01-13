@@ -1,0 +1,84 @@
+* {
+  margin:0;   /* 마진 리셋 */
+  padding:0;   /* 패딩 리셋 */
+  box-sizing: border-box;   /* 박스 영역은 테두리까지 */ 
+}
+
+#container {
+  margin:0 auto;  /* 화면 중앙에 배치 */
+  width:1200px;    /* 너비 */
+}
+
+
+/*********************************/
+/* 헤더 영역 - 로고와 내비게이션 */
+/*********************************/
+
+header{ 
+  width:100%;    /*  너비 */
+  height:100px;   /* 높이 */ 
+  background-color:blue;
+}
+
+/* 로고 영역 */
+#logo{ 
+  float:left;   /* 왼쪽으로 플로팅 */ 
+  width:250px;   /*  너비 */ 
+  height:100px;   /* 높이 */
+  background-color:indigo;  
+}
+
+/* 내비게이션 영역 */
+nav{  
+  float:right;   /* 오른쪽으로 플로팅 */
+  width:900px;   /*   너비 */  
+  height:100px;   /* 메뉴 영역 높이 */ 
+  background-color:green;  
+}
+
+/********************************/
+/*   이미지 슬라이드 쇼 영역    */
+/********************************/
+
+#slideShow {   
+  clear:both;   /* 플로팅 해제 */
+  width:100%;    /* 너비 */ 
+  height:300px;   /* 높이 */ 
+  background:orange; 
+  overflow:hidden;   /* 영역 넘치면 감춤 */ 
+}
+
+/**************************************/
+/*   콘텐츠 영역  - 탭 메뉴와 퀵 링크 */
+/**************************************/
+
+#contents{  
+  width:100%;   /* 너비 */
+  height:300px;  /* 높이 */   
+}
+
+/* 탭 메뉴 */
+#tabMenu{  
+  float:left;  /* 왼쪽으로 플로팅 */ 
+  width:600px;   /* 너비 */ 
+  height:100%;   /* 높이 */
+  background-color:violet;
+}
+
+/* 퀵 링크 */ 
+#links{  
+  float:right;   /* 오른쪽으로 플로팅 */
+  width:600px;   /* 너비 */
+  height:100%;   /* 높이 */
+  background-color:skyblue;
+}
+
+/******************/
+/*   푸터 영역    */
+/******************/
+
+footer{   
+  width:100%;   /* 너비 */
+  height:100px;  /* 높이 */
+  background:gray;
+}

@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@700&display=swap');
+
+* {
+  margin:0;   /* 마진 리셋 */
+  padding:0;   /* 패딩 리셋 */
+  box-sizing: border-box;   /* 박스 영역은 테두리까지 */ 
+}
+a {
+  text-decoration:none;  /* 텍스트 링크 밑줄 없애기 */ 
+}
+ul {
+  list-style: none;
+}
+
+#container {
+  margin:0 auto;  /* 화면 중앙에 배치 */
+  width:1200px;    /* 너비 */
+}
+
+/* 헤더 */ 
+
+header{
+  width:100%;    /*  너비 */
+  height:100px;   /* 높이 */ 
+  background-color:#07c;
+}
+
+/* 로고 */
+
+#logo{ 
+  float:left;   /* 왼쪽으로 플로팅 */ 
+  width:250px;   /*  너비 */ 
+  height:100px;   /* 높이 */
+  line-height:100px;  /* 세로로 중간에 맞춤 - 줄간격을 높이 값과 같게 */
+  padding-left:20px;  /* 왼쪽에 여백 */
+}
+#logo h1 {
+  font-family:'Merienda', cursive;
+  font-weight:700;
+  font-size:40px;   /* 글자 크기 */
+  color:#fff;   /* 글자 색*/
+  text-shadow:0 -1px 0 #222;  /* 그림자 색 */
+}
+
+/* 내비게이션 */ 
+
+nav{  
+  float:right;   /* 오른쪽으로 플로팅 */
+  width:900px;   /*   너비 */  
+  height:100px;   /* 메뉴 영역 높이 */  
+  padding-top:40px;  /* 메뉴를 아래로 내리기 위해 */  
+}
+#topMenu {  
+  height:60px; 
+}
+#topMenu > li {
+  float:left;  /* 메뉴 항목을 왼쪽으로 플로팅 */ 
+  position: relative;  /* 서브 메뉴를 absolute로 하기 위해, 이 부분을 relative로 */  
+}
+#topMenu > li > a{
+  display:block;  /* 링크 텍스트는 블록으로 */ 
+  color:#fff;  /* 글자 색 */
+  font-weight:600;  /* 글자 굵기 */
+  text-shadow:0 1px #07c;  /* 그림자 추가 */
+  padding:20px 60px;  /* 패딩 */ 
+}
+#topMenu > li > a > span {
+  font-size : 0.5em;   /* 서브 메뉴가 있는 항목에 화살표 표시 */   
+}
+#topMenu > li > a:hover {
+  color:#000;  /* 마우스 오버하면 색상 바뀜 */ 
+  text-shadow:0 -1px #07c;  /* 글자가 너무 굵어지지 않도록 */
+}
+
+#topMenu > li > ul { /* 서브 메뉴 스타일 */
+  display: none;  /* 서브 메뉴 처음에는 화면에 안 보이게 */ 
+  position:absolute;  /* 서브 메뉴 포지셔닝 */ 
+  width:160px;
+  background:rgba(255,255,255,0.6);  /* 슬라이드 쇼 비치도록 배경 색 조절 */
+  left:20px;     
+  margin:0;
+}
+#topMenu > li > ul > li {    
+  padding:10px 10px 10px 30px;   /* 서브 메뉴 항목 */
+}
+#topMenu > li > ul > li > a { 
+  font-size:14px;   
+  padding:10px;
+  color:#000;  
+}
+#topMenu > li:hover > ul {
+  display: block;  /* 메인 메뉴 항목 위로 오버하면 서브 메뉴 표시 */
+  z-index:10;  /* 슬라이드 쇼에 가리지 않게 조절 */ 
+}
+#topMenu > li > ul > li > a:hover {
+  color:#f00;  /* 서브 메뉴 마우스 오버하면 색상 바뀜 */   
+} 
+
+/* 이미지 슬라이드 쇼 */
+
+#slideShow {   
+  clear:both;   /* 플로팅 해제 */
+  width:100%;    /* 너비 */ 
+  height:300px;   /* 높이 */ 
+  overflow:hidden;   /* 영역 넘치면 감춤 */ 
+  position: relative;
+}
+#slides {
+  position: absolute;
+}
+#slides > img {
+  width:100%;  /* 너비 */
+  float:left;  /* 가로로 배치 */
+}
+
+/* 콘텐츠 */ 
+
+#contents{  
+  width:100%;   /* 너비 */
+  height:300px;  /* 높이 */   
+}
+
+/* 탭 메뉴 */ 
+
+#tabMenu{  
+  float:left;  /* 왼쪽으로 플로팅 */ 
+  width:600px;   /* 너비 */ 
+  height:100%;   /* 높이 */
+  background-color:violet;
+}
+
+/* 퀵 링크 */
+
+#links{  
+  float:right;   /* 오른쪽으로 플로팅 */
+  width:600px;   /* 너비 */
+  height:100%;   /* 높이 */
+  background-color:skyblue;
+}
+
+/* 푸터 */ 
+
+footer{   
+  width:100%;   /* 너비 */
+  height:100px;  /* 높이 */
+  background-color:gray;
+}
